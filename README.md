@@ -14,7 +14,7 @@ Erwan Le Gall (novembre 2019 - octobre 2020)
 Logo de Focus+ imaginé et disigné par Erwan Le Gall
 [Son GitHub](https://github.com/ele-gall-ac-mineducation/focusplus_assets/blob/master/focusplus%20-%20logo%20et%20texte.svg)
 
-![logo_focus+](./Windows/src/image/logo_focus+.png)
+![logo_focus+](./docs/images/logo_focus+.png)
 
 Le projet est à ce jour sans intrapreneur
 
@@ -62,7 +62,7 @@ Extensions utilisées :
 | axios            | Requête HTTP                  |   | mongoose                  | Connexion avec base de donnée MONGODB |
 | bootstrap        | Framework de css              |   | mongoose-unique-validator | Permet d'avoir qu'un seul utilisateur |
 | downloadjs       | Gère le download              |   | jswebtoken                | Donne un token a l'utilisateur        |
-| node-sass        |                               |   | body-parser               | Décompile les requête HTTP           |
+| node-sass        |                               |   | body-parser               | Décompile les requête HTTP            |
 | react-bootstrap  | Bootstrap pour React          |   | cors                      |                                       |
 | react-dropzone   | Drag & Drop simple            |   | multer                    | Sauvegarde sur le serveur             |
 | react-router-dom | Navigation simple entre pages |   | express                   | Middleware                            |
@@ -76,7 +76,7 @@ Le script.sh "run.sh" permet de lancer le site automatiquement (lance le backend
 Les scripts ne peuvent être utilisés que si bash est installé (à vérifier sur les serveurs du ministère, sinon modification éventuelle à prévoir)
 
 Voici un petit schéma explicatif du fonctionnement de la première partie :
-![schema_explicatif](schema_explicatif.png)
+![schema_explicatif](./docs/images/schema_explicatif.png)
 
 Dans le cadre de notre prototype nous appliquons seulement un filtre de daltonisme (3 versions) sur l'image puis nous la renvoyont à l'utilisateur
 
@@ -144,7 +144,7 @@ MongoDB nous cause des problèmes car pour l'instant seulement Quentin arrive à
 - Déploiement du site :
 Nous ne pouvons actuellement déployer que la partie Front du site, simplement parce que notre backend est constiué de 3 parties et deux d'entre elles sont du Bash et une Lib GMIC, ce qui rend difficile l'hébergement de ce dernier sans utiliser un de nos serveurs, il sera finalement installer en local (voir plus bas).
 
-![schema_explicatif_bis](schema_explicatif_bis.png)
+![schema_explicatif_bis](./docs/images/schema_explicatif_bis.png)
 
 - Utilisateur :
 Nous avons rencotrés des problèmes avec une route pour créer nos utilisateur. Cela est finalement régler avec la lib "body-parser".
