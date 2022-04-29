@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  web-client:
+    build:
+      context: ./focus+/client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+  server:
+    build:
+      context: ./focus+/server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
