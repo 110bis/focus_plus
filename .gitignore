@@ -1,16 +1,16 @@
 # dependencies
-*/node_modules/
-*/.pnp
+**/node_modules/
+**/.pnp
 *.pnp.js
 
 # testing
 */coverage
 
 # production
-*/build/
+**/build/
 
 # misc
-*/package-lock.json
+**/package-lock.json
 
 *.DS_Store
 *.env.local
@@ -18,6 +18,6 @@
 *.env.test.local
 *.env.production.local
 
-*/npm-debug.log*
-*/yarn-debug.log*
-*/yarn-error.log*
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
