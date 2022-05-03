@@ -1,0 +1,43 @@
+name: TestWebsite
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  WebsiteTest:
+    runs-on: unbutu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 16, 14]
+
+    steps:
+      - name: Checkout
+        uses: actions/Checkout@V2
+
+      - name: Install dependecies server
+        run: npm install ./focus+/server
+
+      - name: Install dependecies client
+        run: npm install ./focus+/client
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      
+      - name: Move folder
+        run: cd ./focus+/client
+
+      - name: Build client
+        run: npm run build --if-present
+
+      - name: Move folder
+        run: cd ./focus+/server
+
+      - name: Build server
+        run: npm run build --if-present
