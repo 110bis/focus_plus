@@ -1,1 +1,0 @@
-export const API_URL = 'http://10.243.146.47:5000'; //URL of backend
