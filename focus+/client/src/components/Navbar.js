@@ -10,6 +10,9 @@ function Navbar() {
                 <Link to="/">
                 <li style={{marginLeft: 10, listStyle: 'none'}}>Acceuil</li>
                 </Link>
+                <Link to="/about">
+                <li style={{marginLeft: 10, listStyle: 'none'}}>About</li>
+                </Link>
                 <Link to="*">
                 <li style={{marginLeft: 10, listStyle: 'none'}}>Error</li>
                 </Link>
