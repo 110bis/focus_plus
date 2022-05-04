@@ -1,0 +1,15 @@
+*
+{
+    background-color: lightgray;
+}
+
+.Navbar
+{
+    display: flex;
+    align-items: center;
+}
+
+.Selection
+{
+    display: flex;
+}
