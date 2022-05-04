@@ -1,0 +1,23 @@
+header
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	background: lightgray;
+	background-size: 50%;
+}
+
+.logo-ministère
+{
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+}
+
+.logo-focus-plus
+{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	size-adjust: 25%;
+}
