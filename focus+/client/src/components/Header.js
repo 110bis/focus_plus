@@ -2,6 +2,8 @@
 /* Dependencies */
 //////////////////
 
+import React from "react";
+
 ////////////
 /* STYLES */
 ////////////
